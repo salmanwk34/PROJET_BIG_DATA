@@ -1,0 +1,47 @@
+[
+    {
+      "nom_utilisateur": "Juliette",
+      "age": 19,
+      "sexe": "feminin",
+      "poids_kg": 47,
+      "taille_cm": 157,
+      "regime_suivi": "Cétogène",
+      "calories_max_jour": 1400
+    },
+    {
+      "nom_utilisateur": "Romeo",
+      "age": 23,
+      "sexe": "masculin",
+      "poids_kg": 92,
+      "taille_cm": 180,
+      "regime_suivi": "Méditerranéen",
+      "calories_max_jour": 2600
+    },
+    {
+      "nom_utilisateur": "Charlie",
+      "age": 32,
+      "sexe": "masculin",
+      "poids_kg": 75,
+      "taille_cm": 180,
+      "regime_suivi": "Paléo",
+      "calories_max_jour": 2500
+    },
+    {
+      "nom_utilisateur": "Lucile",
+      "age": 26,
+      "sexe": "feminin",
+      "poids_kg": 55,
+      "taille_cm": 170,
+      "regime_suivi": "Végétalien",
+      "calories_max_jour": 2000
+    },
+    {
+      "nom_utilisateur": "Adonia",
+      "age": 40,
+      "sexe": "masculin",
+      "poids_kg": 90,
+      "taille_cm": 172,
+      "regime_suivi": "DASH",
+      "calories_max_jour": 2300
+    }
+]

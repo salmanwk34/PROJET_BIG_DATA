@@ -1,0 +1,6 @@
+nom_regime,glucides_max_g_per_100g,lipides_min_g_per_100g,proteines_min_g_per_100g
+Cétogène,10,55,20
+Méditerranéen,55,35,15
+Paléo,40,30,20
+Végétalien,50,20,15
+DASH,60,27,18
