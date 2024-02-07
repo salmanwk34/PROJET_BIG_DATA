@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  mongodb:
+    image: mongo
+    volumes:
+      - ./data/db:/data/db
+      - C:/Users/Utilisateur/Desktop/PROJET_BIG_DATA:/data/dump
+    ports:
+      - "27017:27017"
+    networks:
+      - etl-network
+
+  spark:
+    image: bitnami/spark
+    volumes:
+      - ./script.py:/opt/application/script.py
+      - ./regimes.csv:/opt/application/regimes.csv
+      - ./utilisateurs.csv:/opt/application/utilisateurs.csv
+      - ./spark-jars:/opt/application/spark-jars
+      - ./postgresql-42.7.1.jar:/opt/application/postgresql-42.7.1.jar
+    depends_on:
+      - mongodb
+    ports:
+      - "8080:8080"
+    networks:
+      - etl-network
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: 'salman'
+      POSTGRES_PASSWORD: 'masterepsi99'
+      POSTGRES_DB: 'EPSI'
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - etl-network
+
+networks:
+  etl-network:
+
+volumes:
+  mongo-data:
+  postgres-data:
